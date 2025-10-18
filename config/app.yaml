@@ -1,0 +1,6 @@
+
+env: dev
+service.baseUrl: https://jsonplaceholder.typicode.com
+timeouts:
+  connect: 5000
+  read: 10000

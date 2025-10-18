@@ -1,0 +1,17 @@
+Test: Verify_ToDo_Title_and_Status
+Descriere: Verifică statusul și prezența titlului pentru un ToDo specific.
+
+PAS 1: Construiește request-ul
+    Metoda: GET
+    URL: ${service.baseUrl}/todos/1
+    Header: Accept: application/json (implicit)
+
+PAS 2: Execută request-ul
+    Trimite request-ul la server.
+
+PAS 3: Verifică Statusul
+    ASSERT Status_Code este egal cu 200
+
+PAS 4: Verifică Body-ul (Titlul)
+    Citește corpul răspunsului JSON.
+    ASSERT câmpul "title" NU este NULL și are o valoare (ex: "delectus aut autem")
