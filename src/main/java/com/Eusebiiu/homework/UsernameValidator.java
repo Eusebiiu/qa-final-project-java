@@ -1,4 +1,3 @@
-package com.Eusebiiu.homework;
 
 import java.util.Scanner;
 public class UsernameValidator {
@@ -42,7 +41,7 @@ public class UsernameValidator {
                 continue; 
             }
 
-        } while (!isValid); // Repetă atâta timp cât isValid este false
+        } while (!isValid); 
 
         System.out.println("Username acceptat: " + username);
         
