@@ -41,7 +41,7 @@ public class Main {
             System.err.println(" EROARE ADAUGARE (Null): " + e.getMessage());
         }
 
-        System.out.println("\n--- Afișarea Utilizatorilor Adăugați cu Succes ---");
+        System.out.println("\n--- Afișare Utilizatori Adăugați cu Succes ---");
         List<User> successfulUsers = userRepository.getUsers();
         if (successfulUsers.isEmpty()) {
             System.out.println("Nu a fost adăugat niciun utilizator.");
@@ -49,6 +49,7 @@ public class Main {
             for (User user : successfulUsers) {
                 System.out.println(user);
             }
+            System.out.println("\n--- Afisare lista errori ---");
         }
     }
 }
