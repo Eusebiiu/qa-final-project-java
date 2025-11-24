@@ -49,7 +49,7 @@ public class Main {
             for (User user : successfulUsers) {
                 System.out.println(user);
             }
-            System.out.println("\n--- Afisare lista errori ---");
+            System.out.println("\n--- Jurnal errori ---");
         }
     }
 }

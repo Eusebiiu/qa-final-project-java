@@ -7,3 +7,19 @@ public enum BrowserType {
     OPERA,
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
