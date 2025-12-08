@@ -41,7 +41,6 @@ public class PostSteps {
 
     @And("sunt pe pagina principala \\(index.php)")
     public void sunt_pe_pagina_principalDa_index_php() {
-        // Verifică din nou URL-ul
         assertTrue("Nu s-a ajuns pe pagina Index.php.", url().contains("index.php"));
     }
 
@@ -63,7 +62,6 @@ public class PostSteps {
 
     @Then("postarea mea ar trebui sa apara in partea de sus a Feed-ului")
     public void postarea_mea_ar_trebui_sa_apara_in_partea_de_sus_a_feed_ului() {
-        // Mesajul așteptat este cel din fișierul Feature
         String expectedMessage = "Test Automation cu Selenide si Cucumber!";
 
         if (feedPage == null) {
